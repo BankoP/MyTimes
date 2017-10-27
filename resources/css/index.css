@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+a {
+  color: black;
+  margin: 10px;
+}
+
+.logo {
+  display: flex;
+  color: MediumAquamarine;
+  align-items: center;
+  width: 400px;
+}
+
+.logo p {
+  margin: 15px;
+}
+
+.columns {
+  display: flex;
+  border: 1px solid black;
+}
+
+.large {
+  border: 1px solid black;
+  width: 630px;
+}
+
+.medium {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.small {
+  border: 1px solid black;
+  width: 240px;
+}
