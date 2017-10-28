@@ -5,7 +5,17 @@ header {
   font-weight: bold;
   justify-content: space-between;
   align-items: center;
-  margin: 15px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  z-index: 10;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+body {
+  top: 61px;
+  position: relative;
 }
 
 a {
@@ -24,55 +34,161 @@ a {
   margin: 15px;
 }
 
-.main {
+/* header */
+
+.column {
   display: flex;
-  border: 1px solid black;
-}
-
-
-}
-
-.largeTOPimage {
-  display: flex;
-  background-image: url("../images/main-story.png");
-  border: 1px solid black;
-}
-
-.largeMEDIUMimage {
-  display: flex;
-  background-image: url("");
-  border: 1px solid black;
-}
-
-.largeBOTTOMimage {
-  display: flex;
-  background-image: url("");
-  border: 1px solid black;
+  align-items: flex-start;
+  z-index: 5;
 }
 
 .large {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-grow: 0;
   width: 630px;
+  margin: 20px;
 }
 
 .medium {
-  border: 1px solid black;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
   width: 300px;
+  flex-shrink: 0;
+  margin: 20px;
 }
 
 .small {
-  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 240px;
-}
-
-.image {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
+  flex-shrink: 0;
+  margin: 20px;
 }
 
 h1 {
   font-size: 40px;
-  color: red;
+  max-width: 630px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.small p {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  }
+
+.directions p {
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+}
+
+.directions {
+  display: flex;
+  flex-direction: column;
+  background-color: WhiteSmoke;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  display: inline-block;
+  max-width: 630px;
+  margin-bottom: 30px;
+}
+
+.orca {
+  display: inline-block;
+  width: 300px;
+}
+
+.burger {
+  display: inline-block;
+  width: 300px;
+}
+
+.image {
+  display: flex;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+}
+
+.image1 {
+  display: flex;
+  background-image: url("../images/main-story.png");
+  height: 300px;
+}
+
+.image2 {
+  display: flex;
+  background-image: url("../images/season.png");
+  height: 300px;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.image3 {
+  display: flex;
+  background-image: url("../images/camera-man.png");
+  height: 300px;
+  width: 300px;
+  margin-top: 40px;
+}
+
+.image4 {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-image: url("../images/cat.png");
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 400px;
+}
+
+footer p {
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+h5 {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  display: inline;
+  padding-right: 30px;
+  border-right: 2px solid white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+  width:400px;
 }
